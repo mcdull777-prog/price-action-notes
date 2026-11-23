@@ -13,7 +13,8 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['meta', { name: 'author', content: '价格行为笔记' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:site_name', content: '价格行为笔记' }]
+    ['meta', { property: 'og:site_name', content: '价格行为笔记' }],
+    ['script', { type: 'module', src: 'https://static.cloudflareinsights.com/beacon.min.js', 'data-cf-beacon': '{"token":"210ea7044175480794fbe624f2fcbd2b"}' }]
   ],
   themeConfig: {
     outline: { level: [2, 3], label: '本页目录' },
