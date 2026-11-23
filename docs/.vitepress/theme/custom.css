@@ -1,0 +1,142 @@
+:root {
+  --vp-c-brand-1: #165dff;
+  --vp-c-brand-2: #0e42d2;
+  --vp-c-brand-3: #08309e;
+  --vp-c-brand-soft: rgba(22, 93, 255, 0.14);
+}
+
+/* 首页自定义区块 */
+.home {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+.hero-block {
+  padding: 40px 0 32px;
+  border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.hero-block h1 {
+  font-size: 40px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  margin: 0 0 12px;
+}
+
+.hero-block .tagline {
+  font-size: 17px;
+  color: var(--vp-c-text-2);
+  line-height: 1.7;
+  max-width: 640px;
+  margin: 0 0 28px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-actions a {
+  display: inline-block;
+  padding: 10px 22px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.hero-actions .primary {
+  background: var(--vp-c-brand-1);
+  color: #fff;
+}
+
+.hero-actions .primary:hover {
+  background: var(--vp-c-brand-2);
+}
+
+.hero-actions .ghost {
+  border-color: var(--vp-c-divider);
+  color: var(--vp-c-text-1);
+}
+
+.hero-actions .ghost:hover {
+  border-color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-1);
+}
+
+.entry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 40px 0;
+}
+
+.entry-card {
+  display: block;
+  padding: 22px 24px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.entry-card:hover {
+  border-color: var(--vp-c-brand-1);
+  transform: translateY(-2px);
+}
+
+.entry-card h3 {
+  margin: 0 0 8px;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.entry-card p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--vp-c-text-2);
+}
+
+.cta-box {
+  margin: 40px 0 0;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px dashed var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+}
+
+.cta-box h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+}
+
+.cta-box p {
+  margin: 0 0 16px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--vp-c-text-2);
+}
+
+.cta-qr {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  background: #fff center / contain no-repeat;
+  border: 1px solid var(--vp-c-divider);
+}
+
+.risk-note {
+  margin-top: 36px;
+  padding-top: 18px;
+  border-top: 1px solid var(--vp-c-divider);
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--vp-c-text-3);
+}
